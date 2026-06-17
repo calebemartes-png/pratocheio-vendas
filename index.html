@@ -130,6 +130,21 @@
   .faq details[open] summary .plus{transform:rotate(45deg)}
   .faq p.ans{padding:0 4px 22px;color:var(--muted);font-size:15.5px;max-width:42em}
 
+  /* ── DEPOIMENTOS ── */
+  .depo-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
+  .depo{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:28px 26px;position:relative;
+      box-shadow:0 14px 36px -26px rgba(35,31,28,.4)}
+  .depo .quote{font-family:'Fraunces',serif;font-size:54px;line-height:.6;color:var(--orange);opacity:.35;height:28px}
+  .depo .stars{color:#F5A623;font-size:16px;letter-spacing:2px;margin-bottom:12px}
+  .depo p.txt{font-size:15.5px;color:var(--ink);line-height:1.6;margin-bottom:20px}
+  .depo .who{display:flex;align-items:center;gap:12px;border-top:1px solid var(--line);padding-top:16px}
+  .depo .av{flex:none;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--green),var(--green-mid,#2E9E62));
+      color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;font-family:'Inter'}
+  .depo .who .nm{font-weight:700;font-size:15px;color:var(--green-deep)}
+  .depo .who .ctx{font-size:13px;color:var(--muted)}
+  .depo-head{text-align:center}
+  @media(max-width:760px){.depo-grid{grid-template-columns:1fr}}
+
   /* ── FINAL CTA ── */
   .final{background:
       radial-gradient(800px 400px at 50% 120%, rgba(244,124,43,.18), transparent 60%),
@@ -283,6 +298,42 @@
       <details><summary>É assinatura? Vou pagar todo mês?<span class="plus">+</span></summary><p class="ans">Não. Você paga uma única vez R$ 9,90 e o conteúdo é seu para sempre, com acesso ao app incluído.</p></details>
       <details><summary>Como eu recebo o acesso?<span class="plus">+</span></summary><p class="ans">Na hora. Assim que o pagamento é confirmado, você recebe o eBook em PDF e o link de acesso ao aplicativo, com sua senha.</p></details>
       <details><summary>Serve para dietas ou restrições alimentares?<span class="plus">+</span></summary><p class="ans">Sim. No app você informa seu objetivo (economizar, comer saudável, emagrecer) e restrições como vegetariano, vegano, sem glúten ou sem lactose, e o cardápio se ajusta a você.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="block" style="background:var(--cream-dark)">
+  <div class="wrap">
+    <div class="depo-head">
+      <div class="kicker">Quem já usa, aprova</div>
+      <h2 class="sec">O que estão dizendo sobre o Prato Cheio</h2>
+    </div>
+    <div class="depo-grid">
+      <div class="depo">
+        <div class="quote">&ldquo;</div>
+        <div class="stars">★★★★★</div>
+        <p class="txt">Estou gostando muito do Prato Cheio! Além do conteúdo do e-book ser claro e fácil de aplicar, o acesso ao aplicativo faz toda a diferença. Consigo montar e editar o cardápio do mês inteiro de acordo com a realidade da minha família e até definir o valor que quero gastar. Isso tem me ajudado a organizar melhor as compras, evitar desperdícios e economizar sem abrir mão de uma alimentação de qualidade. Recomendo!</p>
+        <div class="who">
+          <div class="av">M</div>
+          <div>
+            <div class="nm">Mônata</div>
+            <div class="ctx">Dona de casa e mãe</div>
+          </div>
+        </div>
+      </div>
+      <div class="depo">
+        <div class="quote">&ldquo;</div>
+        <div class="stars">★★★★★</div>
+        <p class="txt">Esse app é totalmente voltado para ajudar as famílias a economizar no dia a dia do supermercado. Ele junta coisas que a gente ama: uma lista de compras super fácil de usar e estratégias para economizar de verdade.</p>
+        <div class="who">
+          <div class="av">A</div>
+          <div>
+            <div class="nm">Andreia</div>
+            <div class="ctx">Professora</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
